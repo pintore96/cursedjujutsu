@@ -230,7 +230,6 @@ nav a {
     max-width: 800px;
     margin: 20px auto;
     padding: 10px;
-    border: 2px solid #333;
     border-radius: 10px;
     margin-top: 100px; /* Regola questa altezza in base alla grandezza del tuo header */
 }
