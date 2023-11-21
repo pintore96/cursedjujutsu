@@ -1,0 +1,520 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #000000 url('bgsotto.jpg') center top no-repeat;
+    background-size: contain;
+    background-repeat: repeat;
+    box-sizing: border-box;
+    /* border: 0px solid rgb(255, 255, 255); */
+    min-height: 100%;
+    /* max-width: 1200px; */
+    margin: 0 auto; /* Centra il contenuto orizzontalmente */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Aggiungi un'ombra */
+}
+
+
+
+.header {
+    background: #f2f2f2 url('megumibg.jpg') center top no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 70px 0;
+}
+
+.main-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #FF5733;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+
+#site-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fffbfa;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    animation: neon 1.5s linear infinite alternate;
+}
+
+@keyframes neon {
+    from {
+        text-shadow: 0 0 10px rgba(255, 87, 51, 0.7), 0 0 20px rgba(255, 87, 51, 0.7);
+    }
+    to {
+        text-shadow: 0 0 20px rgba(255, 87, 51, 0.7), 0 0 40px rgba(255, 87, 51, 0.7);
+    }
+}
+
+#site-title:hover {
+    animation: none; /* Rimuove l'animazione al passaggio del mouse */
+    color: #FFC300; /* Cambia il colore al passaggio del mouse */
+    text-shadow: 0 0 20px rgba(255, 87, 51, 0.7), 0 0 40px rgba(255, 87, 51, 0.7);
+}
+
+
+p {
+    font-size: 22px; /* Imposta la dimensione del carattere */
+    color: #ffffff; /* Imposta il colore del testo */
+    margin-bottom: 20px; /* Aggiunge spazio alla parte inferiore del paragrafo */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* background-color: #000000; */
+}
+
+h2 {
+    display: inline-block;
+    font-size: 1.5em;
+    padding: 10px 20px;
+    background: linear-gradient(to right, #ff0000b5, #000000);
+    color: #ffffff;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    text-align: center !important;
+    margin: 0 auto;
+    display: table;
+    /* margin-bottom: 20px; */
+}
+
+h2::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    /* bottom: -5px; */
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    z-index: -1;
+}
+
+
+
+
+
+h2:hover {
+    color: #FFC300; /* Cambia il colore di h2 al passaggio del mouse */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Cambia l'ombra di h2 al passaggio del mouse */
+}
+
+
+.character-section h2 {
+    text-align: center;
+    line-height: 1.5; /* Regola la distanza tra le linee per centrare verticalmente */
+    margin: 0; /* Rimuove il margine per evitare spazi vuoti sopra e sotto l'h2 */
+    margin-bottom: 20px; /* Aggiunge spazio nella parte inferiore di ciascun h2 */
+}
+
+.character-section section {
+    margin-top: 20px; /* Aggiunge spazio sopra la sezione */
+    margin-bottom: 20px; /* Aggiunge spazio sotto la sezione */
+}
+
+.character-section .character-item {
+    margin-top: 20px; /* Aggiunge spazio sopra ogni sezione */
+    margin-bottom: 20px; /* Aggiunge spazio sotto ogni sezione */
+}
+
+.character-section {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.character-item {
+    margin: 15px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.character-item img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #333;
+    border-radius: 8px;
+}
+
+.character-description {
+    padding: 10px;
+    background-color: #ffffff;
+    border: 2px solid #333;
+    border-radius: 8px;
+}
+
+.character-description h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #FF5733;
+}
+
+.character-description p {
+    font-size: 14px;
+    color: #333;
+}
+/* .character-title {
+    text-align: center;
+    color: #ffffff;
+    font-size: 36px;
+    margin-bottom: 20px;
+} */
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.section {
+    text-align: center;
+    padding: 20px;
+    /* margin-bottom: 20px; */
+}
+
+.section h2 {
+    margin-bottom: 20px; /* Aggiungi spazio nella parte inferiore di ciascun h2 */
+}
+/* Altri stili per la sezione Scene Epiche */
+
+.epic-scenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra orizzontalmente le scene */
+}
+
+.scene {
+    text-align: center;
+    margin: 20px;
+    max-width: 70%; /* Imposta una larghezza maggiore per le scene */
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.scene:hover {
+    transform: scale(1.1);
+}
+
+.scene img {
+    max-width: 100%;
+}
+
+/* Stili per il video wrapper */
+.video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 10px;
+    margin-top: 100px; /* Regola questa altezza in base alla grandezza del tuo header */
+}
+
+
+
+.video-container video {
+    width: 80%; /* Riempi il 80% del riquadro, rendendo il video leggermente più piccolo */
+    height: auto; /* Adatta l'altezza in base alla larghezza per mantenere le proporzioni */
+    object-fit: cover; /* Mantieni le proporzioni e riempi il riquadro */
+}
+
+
+
+.video-container video {
+    width: 100%; /* Riempi completamente il riquadro */
+    height: auto; /* Adatta l'altezza in base alla larghezza per mantenere le proporzioni */
+    object-fit: cover; /* Mantieni le proporzioni e riempi il riquadro */
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+
+.video-wrapper video {
+    width: 80%; /* Riempi il 80% del riquadro, rendendo il video leggermente più piccolo */
+    height: auto; /* Adatta l'altezza in base alla larghezza per mantenere le proporzioni */
+    object-fit: cover; /* Mantieni le proporzioni e riempi il riquadro */
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.video-wrapper .iframe-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 56.25%; /* Rapporto 16:9 per mantenere le proporzioni del video */
+}
+
+.video-wrapper .description-box {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.large-video video {
+    display: block; /* Imposta il video come blocco separato */
+    margin: 0 auto; /* Centra il video orizzontalmente nel riquadro */
+    width: 100%; /* Riempi completamente il riquadro */
+    height: auto; /* Adatta l'altezza in base alla larghezza per mantenere le proporzioni */
+    object-fit: cover; /* Mantieni le proporzioni e riempi il riquadro */
+}
+
+.large-video figcaption {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 16px; /* Aumenta la dimensione del carattere */
+    font-weight: bold; /* Rendi il testo in grassetto */
+    color: #ffffff; /* Imposta il colore del testo */
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Aggiunge spaziatura tra le lettere */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Aggiunge una ombra al testo */
+    padding: 5px; /* Aggiunge spaziatura interna al titolo */
+    background-color: #333;
+    border-radius: 5px; /* Aggiunge angoli arrotondati al titolo */
+    transition: all 0.3s; /* Aggiunge una transizione per effetti hover */
+}
+
+.video-wrapper:hover figcaption {
+    opacity: 1; /* Al passaggio del mouse, il testo diventa opaco */
+}
+
+.large-video figcaption:hover {
+    /* color: rgb(255, 0, 0); Cambia il colore del testo al passaggio del mouse */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Cambia l'ombra al passaggio del mouse */
+    background-color: #222; /* Cambia il colore di sfondo al passaggio del mouse */
+}
+
+.cursed-section {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.cursed-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cursed-item {
+    margin: 15px;
+    max-width: 300px; /* Larghezza massima per gli elementi */
+    text-align: left; /* Allinea il testo a sinistra */
+    padding: 15px; /* Aggiunge spaziatura interna per creare un riquadro */
+    border: 2px solid #333; /* Aggiunge un bordo di colore grigio scuro */
+    border-radius: 8px; /* Aggiunge angoli arrotondati per un aspetto più gradevole */
+    background-color: #000000; /* Aggiunge uno sfondo di colore grigio chiaro */
+    transition: transform 0.3s ease; /* Aggiunge una transizione per un effetto più fluido */
+
+    /* Regola per gestire l'effetto di trasformazione al passaggio del mouse */
+    &:hover {
+        transform: scale(1.05); /* Ingrandisce leggermente l'elemento al passaggio del mouse */
+    }
+}
+
+.cursed-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+.cursed-item p {
+    margin-top: 10px;
+    font-size: 16px; /* Imposta la dimensione del testo */
+    line-height: 1.5; /* Imposta l'altezza della riga per una migliore leggibilità */
+}
+
+
+.separator::before {
+    left: 0;
+    transform: translate(0, -50%); /* Posiziona l'estremità sinistra */
+}
+
+.separator::after {
+    right: 0;
+    transform: translate(0, -50%); /* Posiziona l'estremità destra */
+}
+
+.character-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.character-item {
+    margin: 15px;
+    max-width: 300px;
+    text-align: center;
+}
+
+.character-item img {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #333; /* Aggiungi un bordo intorno all'immagine */
+    border-radius: 8px; /* Aggiungi angoli arrotondati */
+}
+
+.character-description {
+    padding: 10px;
+    background-color: #000000;
+    border: 2px solid #333;
+    border-radius: 8px;
+}
+
+.character-description h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #ff3333;
+}
+
+.character-description p {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.character-item:hover {
+    transform: scale(1.1); /* Ingrandisci l'elemento del 10% */
+}
+
+.character-item:hover img {
+    border: 2px solid #ff3333; /* Cambia il bordo dell'immagine al passaggio del mouse */
+}
+
+.character-item:hover h3 {
+    color: #FF5733; /* Cambia il colore del testo al passaggio del mouse */
+}
+
+/* Stili per il footer */
+.footer {
+    background-color: #333; /* Colore di sfondo del footer */
+    color: #fff; /* Colore del testo */
+    padding: 2px; /* Spaziatura interna */
+    text-align: center; /* Centra il testo */
+}
+
+/* Stili per il contenuto all'interno del footer */
+.footer-content {
+    background-color: #ddd; /* Colore di sfondo del contenuto */
+    padding: 20px; /* Spaziatura interna del contenuto */
+    /* border-radius: 8px; */
+    margin-top: 20px; /* Margine superiore */
+}
+
+/* Stili per i link nel footer */
+.footer a {
+    color: #000; /* Colore dei link */
+    text-decoration: none; /* Rimuove la sottolineatura dei link */
+    margin: 0 10px; /* Margine tra i link */
+}
+
+/* Stili per le informazioni di contatto */
+.contact-info {
+    margin-top: 15px; /* Margine superiore */
+}
+
+.footer-p {
+    color: #222;
+}
+
+.footer-privacy {
+    font-size: smaller;
+    color: #000;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+  }
+  
+
+
+.iframe-wrapper {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        padding-top: 56.25%; /* Imposta l'aspect ratio del video (qui 16:9) */
+ }
+
+
+ .iframe-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.description-box {
+    background-color: #333; /* Colore di sfondo per la descrizione */
+  padding: 10px;
+  text-align: center;
+  }
+
+  .description-box p {
+    color: white;
+    margin: 0;
+  }
+
+
+
+/* Stili per i video su dispositivi mobili */
+@media screen and (max-width: 768px) {
+    .video-container {
+        width: 90%; /* Rendi il contenitore dei video più largo */
+        margin: 10px auto; /* Centra il contenitore dei video */
+        padding: 0; /* Rimuovi lo spazio interno */
+    }
+
+    .video-wrapper {
+        width: 80%; /* Rendi il riquadro dei video larghezza massima */
+        margin: 0; /* Rimuovi il margine per occupare tutto lo spazio disponibile */
+        padding: 0; /* Rimuovi lo spazio interno */
+        background-color: transparent;
+    }
+
+    .video-wrapper video {
+        width: 100%; /* Occupa l'intera larghezza del riquadro */
+        height: auto; /* Adatta l'altezza in base alla larghezza */
+    }
+
+    .video-wrapper figcaption {
+        font-size: 13px; /* Aumenta leggermente la dimensione del testo */
+        background-color: #000;
+    }
+}
+
